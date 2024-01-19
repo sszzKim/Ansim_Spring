@@ -50,7 +50,7 @@ public class AuthSuccessHandler extends SimpleUrlAuthenticationSuccessHandler{
 		
 		log.info("****************** FormLogin 성공 ******************");
 		
-		setDefaultTargetUrl("/guide/map");
+		//setDefaultTargetUrl("/guide/map");
 		super.onAuthenticationSuccess(request, response, authentication);
 		
 	}

@@ -65,7 +65,9 @@ public class OAuth2SuccessHandler extends SimpleUrlAuthenticationSuccessHandler{
 		response.addCookie(JWTCookie);
 		response.addCookie(userIDCookie);
 
-		setDefaultTargetUrl("http://localhost:3000/guide");
+		//setDefaultTargetUrl("http://localhost:3000/guide");
+		//setDefaultTargetUrl("/guide");
+		setDefaultTargetUrl("http://localhost/guide");
 		super.onAuthenticationSuccess(request, response, authentication);
 	}
 
